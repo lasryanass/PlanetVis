@@ -20,6 +20,6 @@ public class ToggleTrajectory : MonoBehaviour
 
     private void UpdateButtonText()
     {
-        buttonText.text = solarSystemController.showTrajectories ? "Cacher Trajectoire" : "Afficher Trajectoire";
+        buttonText.text = solarSystemController.hideTrajectories ? "Afficher Trajectoire" : "Cacher Trajectoire";
     }
 }
