@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class SolarSystemController : MonoBehaviour
 {
+    public bool showTrajectories = false; // État initial : cacher les trajectoires.
+    public bool showSizes = false; // État initial : vue réaliste.
 
     // Start is called before the first frame update
     void Start()
@@ -53,4 +55,59 @@ public class SolarSystemController : MonoBehaviour
             }
         }
     }
+
+    public void ToggleTrajectories()
+    {
+        showTrajectories = !showTrajectories;
+        if (showTrajectories)
+        {
+            ShowTrajectories();
+        }
+        else
+        {
+            HideTrajectories();
+        }
+    }
+
+    private void ShowTrajectories()
+    {
+        // Implémentez le code pour afficher les trajectoires ici.
+        Debug.Log("Trajectoires affichées.");
+    }
+
+    private void HideTrajectories()
+    {
+        // Implémentez le code pour cacher les trajectoires ici.
+        Debug.Log("Trajectoires cachées.");
+    }
+
+    public void ToggleSizes()
+    {
+        showSizes = !showSizes;
+        if (showSizes)
+        {
+            ShowSizes();
+        }
+        else
+        {
+            HideSizes();
+        }
+    }
+
+    private void ShowSizes()
+    {
+        // Implémentez le code pour afficher les trajectoires ici.
+        Debug.Log("Vue adaptée.");
+    }
+
+    private void HideSizes()
+    {
+        // Implémentez le code pour cacher les trajectoires ici.
+        Debug.Log("Vue réaliste.");
+    }
 }
+
+
+
+    
+
