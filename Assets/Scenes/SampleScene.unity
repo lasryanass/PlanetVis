@@ -545,6 +545,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -618,6 +619,156 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5caaef072764442b694afc0a8de4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 1
+  zoomSpeed: 2
+  rotateXPositiveAction:
+    m_Name: Rotate X Positive
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ad4e7cbf-4cb1-4316-baba-ee6b4f219d7b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 369da378-189e-494b-a894-995871392edb
+      m_Path: <Keyboard>/upArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate X Positive
+      m_Flags: 0
+    m_Flags: 0
+  rotateXNegativeAction:
+    m_Name: Rotate X Negative
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 78d955dd-e67a-4021-a691-3df9a8b50e25
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: fa5aafbf-d0f6-4a6e-ba54-e7dcfeb278b7
+      m_Path: <Keyboard>/downArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate X Negative
+      m_Flags: 0
+    m_Flags: 0
+  rotateYPositiveAction:
+    m_Name: Rotate Y Positive
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: aa7c4072-37c5-403e-8b7b-f791d001f7cf
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: bd2c5183-6128-4033-bac9-daaef298b45f
+      m_Path: <Keyboard>/f
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate Y Positive
+      m_Flags: 0
+    m_Flags: 0
+  rotateYNegativeAction:
+    m_Name: Rotate Y Negative
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: fa12a10f-dedb-4259-a9eb-cf7cba0ae244
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e8d62faa-742d-46f9-846e-4251234e4dd2
+      m_Path: <Keyboard>/g
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate Y Negative
+      m_Flags: 0
+    m_Flags: 0
+  rotateZPositiveAction:
+    m_Name: Rotate Z Positive
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 65ae46a6-e9d4-47a1-8153-fb92bff28eec
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 66db62bc-f311-49e1-abc2-134c7ffd0f08
+      m_Path: <Keyboard>/rightArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate Z Positive
+      m_Flags: 0
+    m_Flags: 0
+  rotateZNegativeAction:
+    m_Name: Rotate Z Negative
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4b402f56-64ec-4ddc-be60-7c2d44b26155
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 4ed692eb-38e5-450a-85a4-b1a021638626
+      m_Path: <Keyboard>/leftArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate Z Negative
+      m_Flags: 0
+    m_Flags: 0
+  zoomInAction:
+    m_Name: Zoom In
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 8ed987da-94e8-4a78-be36-d75416af60de
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: d5ce8f55-83d3-49a5-bac7-262f4be668b2
+      m_Path: <Keyboard>/z
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Zoom In
+      m_Flags: 0
+    m_Flags: 0
+  zoomOutAction:
+    m_Name: Zoom Out
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2d3d4ce3-af1c-4a0b-bd3c-96c11a48ed15
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 2e6fd474-cc0a-498b-8ec4-f7e9d175903c
+      m_Path: <Keyboard>/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Zoom Out
+      m_Flags: 0
+    m_Flags: 0
 --- !u!1001 &1043610293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -860,6 +1011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca4b7b5668dd1541a1fd92177e39e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  date:
+    _dateTime: 1/1/0001 12:00:00 AM
 --- !u!4 &1501119851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 483753915328135555, guid: 7de13da6bba42294badbf014b7253851, type: 3}
