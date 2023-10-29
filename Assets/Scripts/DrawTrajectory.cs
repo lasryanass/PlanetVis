@@ -5,8 +5,8 @@ public static class DrawTrajectory {
     public static void DrawCircle(GameObject target, Vector2 center, float radius, Color color, float zPosition, int numSegments = 360)
     {
         LineRenderer lineRenderer = target.GetComponent<LineRenderer>();
-        lineRenderer.startWidth = 0.1f;
-        lineRenderer.endWidth = 0.1f;
+        lineRenderer.startWidth = 0.05f;
+        lineRenderer.endWidth = 0.05f;
         lineRenderer.positionCount = numSegments + 1;
         lineRenderer.startColor = color;
         lineRenderer.endColor = color;
