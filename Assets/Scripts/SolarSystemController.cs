@@ -14,11 +14,11 @@ public class SolarSystemController : MonoBehaviour
     void Start()
     {
         PlanetManager.current.OnTimeChange += UpdatePosition;
+
         UpdatePosition(DateTime.Now);
-        DrawTrajectories(Color.red); // On cache les trajectoires au début
+        DrawTrajectories(Color.red); // On affiche les trajectoires au début
 
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -298,8 +298,3 @@ public class SolarSystemController : MonoBehaviour
         }
     }
 }
-
-
-
-    
-

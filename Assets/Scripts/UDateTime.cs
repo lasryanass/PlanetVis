@@ -37,6 +37,11 @@ public class UDateTime : ISerializationCallbackReceiver
     {
         return dateTime.ToString(format);
     }
+    public DateTime AddDays(int days)
+    {
+        dateTime = dateTime.AddDays(days);
+        return dateTime;
+    }
 }
 
 // if we implement this PropertyDrawer then we keep the label next to the text field
