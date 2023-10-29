@@ -33,6 +33,10 @@ public class UDateTime : ISerializationCallbackReceiver
     {
         _dateTime = dateTime.ToString();
     }
+    public string ToString(string format)
+    {
+        return dateTime.ToString(format);
+    }
 }
 
 // if we implement this PropertyDrawer then we keep the label next to the text field
