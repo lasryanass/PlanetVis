@@ -17,15 +17,15 @@ The image bellow shows the UML class diagram of the project.
     In this section, I implemented some classic camera behaviours: rotating on the X, Y and Z-axis, and zooming/unzooming. Using InputActions in the InputSystem unity package, we can add actions via bindings (up/down arrow keys, left/right arrow keys, F/G, and Z/X).
    ![InputActions](./images/InputActions.png)
    
-   https://github.com/lasryanass/PlanetVis/assets/92301128/6fa6da12-ffd5-4ffc-8afb-0798937e3259
+https://github.com/lasryanass/PlanetVis/assets/92301128/6fa6da12-ffd5-4ffc-8afb-0798937e3259
 
-3. ****************************************************Show/Hide the planets orbits via the UI:****************************************************
+2. ****************************************************Show/Hide the planets orbits via the UI:****************************************************
     
     Using buttons logic, I controlled when the planets’ orbits will be shown. The orbits are simple circles centered on the sun, which is in the origin, and have a radius of the distance between the planet and the sun. As the data follows the more sophisticated Kepler laws. The real orbits are elliptic. Thus, sometimes the planets are shown out of orbit. The orbit circles are drawn using an algorithm that relies on linerendering: The more lines in a polygon, the more it approaches a circle.
    
+https://github.com/lasryanass/PlanetVis/assets/92301128/61e17ece-f8ab-45a2-8242-aaac029603cf
 
-    
-4. **********************************Change the planets scale via UI (Realistic view vs Adapted view):**********************************
+3. **********************************Change the planets scale via UI (Realistic view vs Adapted view):**********************************
     
     Using a button, it is fairly simple to change the scale of the planets via the ***localScale*** attribute of every planet’s *transform*. The adapted view’s purpose is to focus on the planets while not caring about how little or big they look: Mercury and Mars are very small whereas Jupiter and Saturn are giants.
 
